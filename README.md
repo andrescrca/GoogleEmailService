@@ -1,4 +1,4 @@
-Google Email Service Application
+#Google Email Service Application
 This is a simple console application that demonstrates how to use the GoogleEmailService class to send emails using the Gmail API.
 
 Prerequisites
