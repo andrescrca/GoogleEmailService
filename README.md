@@ -1,11 +1,13 @@
-# GoogleEmailService
 Google Email Service Application
 This is a simple console application that demonstrates how to use the GoogleEmailService class to send emails using the Gmail API.
 
 Prerequisites
 Before running the application, make sure you have completed the following steps:
 
-Download the credentials file from the Google Developers Console. Save it as Credentials-email.json in the Providers directory of the application.
+Create a Google Cloud Platform (GCP) project and enable the Gmail API for the project.
+Create a service account within your GCP project and generate a credentials file in JSON format.
+Save the credentials file as Credentials-email.json in the Providers directory of the application.
+Configure the appropriate access and permissions for the service account to send emails on behalf of your desired sender address.
 Replace the placeholder email addresses in the senderEmail and recipientEmail variables with the appropriate email addresses.
 Installation
 Clone the repository or download the source code files.
@@ -21,6 +23,9 @@ If everything is set up correctly, the application will send an email using the 
 
 Cleaning Up
 After running the application, it is recommended to dispose of the resources used by the GoogleEmailService instance. This is done automatically in the provided code by calling the Dispose method on the emailService object in the finally block.
+
+Important Note
+To successfully use the Gmail API, it is crucial to have a well-configured service account within your Google Cloud Platform project. The service account should have the necessary permissions and access to send emails on behalf of the specified sender address. Make sure to follow the Google Cloud Platform documentation and guidelines to properly set up your service account and configure the required access and permissions.
 
 License
 This application is released under the MIT License.
